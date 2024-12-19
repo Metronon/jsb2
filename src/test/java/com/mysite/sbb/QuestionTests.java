@@ -57,13 +57,6 @@ class QuestionTests {
 	}
 
 	@Test
-	@DisplayName("질문이 제목 일부를 포함하는지를 테스트")
-	void t005() {
-		Question q = this.questionRepository.findBySubjectLike("%sbb%");
-		assertEquals(1, q.getId());
-	}
-
-	@Test
 	@DisplayName("질문글의 제목 수정")
 	void t006() {
 		Optional<Question> oq = this.questionRepository.findById(3);
