@@ -35,7 +35,7 @@ public class CreateNewQuestion {
         for (int i = 1; i <= 200; i++) {
             String subject = String.format("[%03d]번째 테스트 데이터 입니다.", i);
             String content = String.format("[%03d]번째 테스트 데이터 입니다.", i);
-            this.questionService.create(subject, content);
+            this.questionService.create(subject, content, null);
         }
     }
 }
