@@ -18,7 +18,7 @@ public class AnswerService {
 		answer.setContent(content);
 		answer.setCreateDate(LocalDateTime.now());
 		answer.setQuestion(question);
-		answer.setSiteUser(author);
+		answer.setAuthor(author);
 		this.answerRepository.save(answer);
 	}
 }
